@@ -28,8 +28,8 @@ Open the *Finder* application and nagivate to a plce of your choosing. For examp
 - Press ENTER/RETURN without typing anything on the remaining prompts/questions, default values will be used.
 
 ![Project Initialization Mac](https://i.imgur.com/zXn8g2w.png)
-- Verify that a package.json file has been created in your project folder. Its content should be the same as the output in your terminal:
- 
+- Verify that a package.json file has been created in your project folder. Its content should be the same as the output in your terminal: 
+
 ![Mac Package.json](https://i.imgur.com/ypZ4ECz.png)
 
 ## Installation
