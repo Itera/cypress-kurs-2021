@@ -9,5 +9,6 @@ Before we start working with Cypress, we'll need to have two things in place:
 - Go through our Windows or Mac installationguide (TODO: legg inn link og få installasjonsguidene over på .md)
 
 ## Ensure the test runner is working as intended
-Open up an example file Cypress has provided you with
-## 
+In a command prompt, navigate to your Cypress folder and type in **npx cypress open**. The Cypress test runner will - after a while - pop up. Ensure that you see example files under the 'examples' folder and that you're able to execute Cypress by clicking on one of them, a new browser window should pop up with the message that the windows is being controlled by software for automated testing. The test-suite should then start running.
+
+![Testrunner](https://i.imgur.com/4oWmoAY.png)
