@@ -19,7 +19,8 @@ Open the *Finder* application and nagivate to a plce of your choosing. For examp
  - Type 'cd ' - include the trailing space - and leave it at that
  - Click-and-drag the project folder from the *Finder* app, into the *Terminal* app. This should add the project folder's path to the terminal *after* 'cd '. 
  - Type *pwd*and press ENTER/RETURN to verify that your terminal is in the correct folder, the terminals' output should match the project folder's path. For example /Users/username/Desktop/Itera\ Cypress\ Workshop
- ![Terminal Mac](https://i.imgur.com/Zsx4oiQ.png)
+
+![Terminal Mac](https://i.imgur.com/Zsx4oiQ.png)
 
 ## 4. Initialize your project
 - Type 'npm init' in your terminal and press ENTER/RETURN, the current directory of your terminal should be the project folder
@@ -27,7 +28,8 @@ Open the *Finder* application and nagivate to a plce of your choosing. For examp
 - Press ENTER/RETURN without typing anything on the remaining prompts/questions, default values will be used.
 
 ![Project Initialization Mac](https://i.imgur.com/zXn8g2w.png)
-- Verify that a package.json file has been created in your project folder. Its content should be the same as the output in your terminal: 
+- Verify that a package.json file has been created in your project folder. Its content should be the same as the output in your terminal:
+ 
 ![Mac Package.json](https://i.imgur.com/ypZ4ECz.png)
 
 ## Installation
