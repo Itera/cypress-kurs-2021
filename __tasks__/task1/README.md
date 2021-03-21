@@ -8,7 +8,7 @@ This is the testcase we are going to automate:
 
 Try to complete this testcase yourself to get familar before we start to program it. 
 
-## Task 1 A
+## Task 1 A - the first test
 
 Open the folder containing the folder where you installed cypress in your favorite IDE. We recomend [Visual Studios Code](https://code.visualstudio.com/Download). In the cypress folder, there is an integration folder, in that folder create a new folder. In your new folder create a new file `task1.js`.
 
@@ -45,6 +45,7 @@ Now is a good time to see if you are able to run your test. Open the cypress tes
 you should be able to see your new file `task1.js` in the test runner. Clicking it will open a browser, you should see something like this
 
 ![cypress in browser](https://i.imgur.com/opktO9q.png)
+Keep this browser open. Each time you save `task.js`, cypress will automatically rerun the test and you can look at the result.
 
 Next we want to make cypress click the button for creating a new issue
 
@@ -79,21 +80,21 @@ Many elements on this webpage has the custom attribute `data-testid`, they have 
 cy.get('[data-testid="icon:plus"]').click();
 ```
 
-That will open this window
+Now is a good time to check that cypress is able to click the button. That will open this window
 ![create issue window](https://i.imgur.com/KmWDY8O.png)
 the only mandatory field is the description. Your task will now be to 
 1. Find a suitable selector for the description and type in some name for your new issue.
 2. Find a suitable selector for the "Create issue"-button and click it. 
 
-**TIP** you can use the `.type('some text');` method to write something in the input field. 
+**TIP** you can use the `.type('some text');` function to type something into the input field. 
 
 For the last step in our first testcase we want to verify that an issue has been created and added to the board. For that you can use the following command
 ```javascript
-cy.contains('nameOfIssue').should('be.visible');
+cy.contains('theNameYouChoseForYourIssue').should('be.visible');
 ```
-The `should()` command will make this an assertion. Notice that this reads like a sentence which is nice. Here it is okey to use `contain()`, because we as writers of the test controll the text. 
+The `should()` command will make this an assertion. Notice that this reads like a sentence which is nice. Here it is okey to use `contain()`, because we as writers of the test controll the text.
 
-## Task 1 B
+## Task 1 B - practising selectors
 In this subtask you will practice more with selectors. You will extend the testcase from 1A so that the issue you create will have more than just default values. Find suitable selectors and change the following values
 - description (you do not have to use any custom formating unless you really want to)
 - issue type 

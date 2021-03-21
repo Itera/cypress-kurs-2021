@@ -28,12 +28,15 @@ The tasks are separated into three different parts. Each part has its own Readme
 
 **Part 1 goals:**
 - todo 
+You will create your first testcase and learn the basics of cypress.
 
 **Part 2 goals:**
 - todo
+This part has a section for you to read that explain some core concepts. You will aslo learn how to crate custom cypress commands. 
 
 **Part 3 goals:**
 - todo
+Learn about how to oranize multiple tests 
 
 **Completed all the parts and eager for more? 💪**
 todo
