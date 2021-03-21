@@ -2,11 +2,11 @@
 
 The goal of this task is to learn the basics of cypress and to create our first automated test. 
 
-This is the testcase we are going to automate: 
+This is the testcase you are going to automate: 
 1. Go to url [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board).
 2. Create a new issue by simluating user clicks and inputs. 
 
-Try to complete this testcase yourself to get familar before we start to program it. 
+Try to complete this testcase yourself to get familar before you start to program it. 
 
 ## Task 1 A - the first test
 
@@ -32,7 +32,7 @@ describe('jira clone', () => {
 
 In Cypress, we use `describe` in order to describe a test-suite which groups several test-cases that tests the same component. Each test-case is described with an `it`, where each `it` is one test case. Notice that we’re using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) here, this is the common way of writing Cypress tests and the most readable.  
 
-The first thing we want to do is to make cypress visit the webpage we are going to test, for that we will use the following command
+The first thing you want to do is to make cypress visit the webpage we are going to test, for that you will need the following command
 ```javascript
 cy.visit('https://jira-clone.mad.itera.no/project/board');
 ```
@@ -71,7 +71,7 @@ there are many ways to select this element.
 
 If you want to learn more about selectors, see the [cypress documentation](https://docs.cypress.io/api/commands/get.html#Arguments).
 
-Now, back to selecting the create-new-issue-button. In your browser, you can right-click on the button and select `inspect`. This will let you look at the html of the webpage and we can look for good selectors. 
+Now, back to selecting the create-new-issue-button. In your browser, you can right-click on the button and select `inspect`. This will let you look at the html of the webpage and let you look for good selectors. 
 
 ![inspect mode](https://i.imgur.com/IXpGWSS.png)
 
