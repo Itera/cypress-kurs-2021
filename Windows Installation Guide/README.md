@@ -6,7 +6,11 @@ Node *(pun)* that Cypress requires Node.js version 12 or above. Download the lat
 
 ![Node](https://i.imgur.com/zIZNiwx.png)
 
-After you've successfully installed Node, open up a command prompt and type in 'node -v' to ensure that Node is correctly installed:
+After you've successfully installed Node, open up a command prompt and type in
+```
+node -v
+```
+to ensure that Node is correctly installed:
 
 ![Cmd node](https://i.imgur.com/W8NWX4c.png)
 
@@ -18,7 +22,11 @@ Using your command prompt, navigate to that folder:
 
 ![Cmd directory](https://i.imgur.com/qe0BpXR.png)
 
-In the command prompt, run the command 'npm install cypress --save-dev' to install Cypress. Beware that this can take a while! After installation the prompt should look something like this:
+In the command prompt, run the command 
+```
+npm install cypress --save-dev
+``` 
+to install Cypress. Beware that this can take a while! After installation the prompt should look something like this:
 
 ![Installation complete](https://i.imgur.com/TJbB6Td.png)
 
