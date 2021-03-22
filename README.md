@@ -6,7 +6,7 @@ Welcome to our test automation workshop! During this course you will learn the a
 Before you start working with Cypress, you will need to have two things in place: 
 - [Node](https://nodejs.org/en/) (version 10 or higher)
 - An IDE
-- Go through our [Windows](https://github.com/Itera/cypress-kurs-navet-2021/tree/main/Windows%20Installation%20Guide) or [Mac](https://github.com/Itera/cypress-kurs-navet-2021/tree/main/Mac%20Installation%20Guide) installation guide (TODO: legg inn link og få installasjonsguidene over på .md)
+- Go through our [Windows](https://github.com/Itera/cypress-kurs-navet-2021/tree/main/Windows%20Installation%20Guide) or [Mac](https://github.com/Itera/cypress-kurs-navet-2021/tree/main/Mac%20Installation%20Guide) installation guide
 
 ## Ensure the test runner is working as intended
 In a command prompt, navigate to your Cypress folder and type in 
