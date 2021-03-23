@@ -20,7 +20,7 @@ However, this new test case proves a new challenge. It requires that we already 
 **Option 4:** The test case from task 1 entail that we can create an issue, therefore we do not have to test that part again. In the previous test case, when we click on the create-new-issue-button a `createIssue()` function is called. That function creates an issue and sends it to the database. The best solution is to call the `createIssue()` function directly. You might ask, is that not cheating? The answer is no, reusing the features of the application is best practice for Cypress. This is also one of the strengths of cypress. Cypress is running with the application and has access to all of it. What benefits do we get from this?
 - Calling `createIssue()` directly will go faster than simulating user input. This means that we have one slow test from Task 1 which creates an issue simulating user input. All other tests that relies on an issue being created will call the function directly and thereby run faster.
 
-## Task 2 A - creating a custom command
+## Task 2 A - Creating A Custom Command
 Even though **Option 4** is the best solution, for sake of simplicity and learning, we will use **Option 3**. First, open the file `commands.js`, you will find it in the `support` folder. Add the following the code
 ```javascript
 Cypress.Commands.add('write the name of your custom command here', (arguments) => {
@@ -36,7 +36,7 @@ Now it is your task to create the custom command.
 **Hint** You can copy paste the cypress commands we used in task 1. 
 **Hint** Your custom command should at least take `name` and `priority` as input. 
 
-## Task 2 B - the second testcase
+## Task 2 B - The Second Test Case
 
 Creata a new file `task2.js`. Using the custom command from task 2A create a new Cypress test for the test case 
 1. Click on issue on board
