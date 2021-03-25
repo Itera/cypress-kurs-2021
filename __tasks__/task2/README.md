@@ -21,7 +21,7 @@ However, this new test case proves a new challenge. It requires that we already 
 - Calling `createIssue()` directly will go faster than simulating user input. This means that we have one slow test from Task 1 which creates an issue simulating user input. All other tests that relies on an issue being created will call the function directly and thereby run faster.
 
 ## Task 2 A - Creating A Custom Command
-Even though **Option 4** is the best solution, for sake of simplicity and learning, we will use **Option 3**. First, open the file `commands.js`, you will find it in the `support` folder. Add the following the code
+Even though **Option 4** is the best solution, for sake of simplicity and learning, we will use **Option 3**. If you want to to read more about this choice, see the remarks at the bottom of this readme. First, open the file `commands.js`, you will find it in the `support` folder. Add the following the code
 ```javascript
 Cypress.Commands.add('write the name of your custom command here', (arguments) => {
     // write your code here
@@ -33,11 +33,22 @@ cy.nameOfCustomCommand(arguments)
 ```
 Now it is your task to create the custom command. 
 
-**Hint** You can copy paste the cypress commands we used in task 1. 
+**Hint** You can copy paste the cypress commands we used in task 1.
+
 **Hint** Your custom command should at least take `name` and `priority` as input. 
+
+**Hint** How to use the `priority` parameter in the selector? You can make use of [javascript Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). Lets say we want to chose the priority Lowest, then the selector will be `'[data-testid="select-option:Lowest"]'`. Parameterizing this using template literals will look like this `` `[data-testid="select-option:${priority}"]` ``.
 
 ## Task 2 B - The Second Test Case
 
 Creata a new file `task2.js`. Using the custom command from task 2A create a new Cypress test for the test case 
 1. Click on issue on board
 2. Change priority
+
+## Remark: Why option 3 is used instead of the better option 4
+
+When making this course, one of the goals was to make it as easy as possible to do the installation and setup. Therefore, we setup up the tasks so that you will run the tests against a live webpage [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board). By doing this the only thing you have to install are node and cypress. You do not have to install the jira clone application. 
+
+But, choosing this approach has some drawbacks. Since we are running the cypress tests against a live webpage, we are not actually running cypress with the application after all. Therefore, we do not have access to the application and unfortunately we are not able to adhere to the best practices of cypress. Another option is to call the API instead of using the application directly, but this has other problems. Cypress is not really meant to run against a live webpage and authenticating correctly towards the API from the cypress is outside the scope of this introductory cypress course. 
+
+In the futere I will consider redoing some parts of the course. The first part will be to rewrite jira-clone so that it is simple to install. Then the course can be changed so that cypress is run with the application. 
