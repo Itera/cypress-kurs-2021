@@ -30,10 +30,10 @@ The tasks are separated into three different parts. Each part has its own Readme
 - You will create your first testcase and learn the basics of cypress.
 
 **Task 2 goals:**
-- This part has a section for you to read that explains some core concepts about test automation and cypress. You will aslo learn how to crate custom cypress commands. 
+- This part has a section for you to read that explains some core concepts about test automation and cypress. You will also learn how to crate custom cypress commands. 
 
 **Task 3 goals:**
 - Learn about how to structure and organize multiple cypress tests. This task is the core of the course. 
 
 **Completed all the parts and eager for more? 💪**
-See the readme in the folder `ekstra_tasks` under `__tasks__`
+See the readme in the folder `extra_tasks` under `__tasks__`
