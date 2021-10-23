@@ -2,16 +2,16 @@
 
 ## Introduction
 
-In this task you are going to learn how to best structure multiple tests and some new trick for how to write reusable code. So first lets look at what one good automated test should consist:
+In this task you are going to learn how to best structure multiple tests and some new trick for how to write reusable code. Firstly, lets look at what one good automated test look like:
 
-1. Set up inital state that is required for the test
+1. Set up initial state that is required for the test
 2. Execute test
 3. Verify result
 4. Clean up state
 
 The purpose of step one and four is to make our tests independent of each other.
 
-In this task you are going to write multiple test cases for testing comments on issues. First go to [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board) and create a comment on a issue to get familiar with the issue. Here are what you are going to test: 
+In this task you are going to write multiple test cases for testing comments on issues. First go to [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board) and create a comment on a issue to get familiar with the test case. Here is what you are going to test: 
 
 - Creating comment
 - Editing comment
@@ -112,7 +112,7 @@ We already have a custom command for creating issues. You should create custom c
 - delete comment
 - edit comment
 
-**Hint** For simplicity sake, use clicks and inputs in all your custom commands. Earlier we recomended not to use `cy.contains('some text')` as a selector, but it'll be difficult to find another selector - so feel free to use it this time! 
+**Hint** For simplicity sake, use clicks and inputs in all your custom commands. Earlier we recommended not to use `cy.contains('some text')` as a selector, but it'll be difficult to find another selector - so feel free to use it this time! 
 
 **Selecting the correct comment?** How do we make sure that we select correct comment? It is possible to chain selectors. We can use `cy.contains('yourCommentText')` to find your comment. The edit and delete buttons are sibling of that element. We can use [`.parent()`](https://docs.cypress.io/api/commands/parent/) to select the parent element. Then we can use `cy.contains('delete/edit')` to select the button. The chain will look like this
 ```javascript

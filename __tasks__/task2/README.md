@@ -8,7 +8,7 @@ The test case for testing this requirement is not very complicated
 1. Click on issue on board
 2. Change priority
 
-However, this new test case proves a new challenge. It requires that we already have an issue to test on. 
+However, this new test case provides us with a new challenge. It requires that we already have an issue to test on. 
 
 **Option 1:** One possible solution is that we pick an existing issue and test on that. But the downside is that we have no control over the issue and if it is suitable for our test case. For example, we want the issue we use to start with a different priority than the one we will change into. 
 
@@ -41,7 +41,7 @@ Now it is your task to create the custom command.
 
 ## Task 2 B - The Second Test Case
 
-Creata a new file `task2.js`. Using the custom command from task 2A create a new Cypress test for the test case 
+Create a a new file `task2.js`. Using the custom command from task 2A create a new Cypress test for the test case 
 1. Click on issue on board
 2. Change priority
 
@@ -51,4 +51,4 @@ When making this course, one of the goals was to make it as easy as possible to 
 
 But, choosing this approach has some drawbacks. Since we are running the cypress tests against a live webpage, we are not actually running cypress with the application after all. Therefore, we do not have access to the application and unfortunately we are not able to adhere to the best practices of cypress. Another option is to call the API instead of using the application directly, but this has other problems. Cypress is not really meant to run against a live webpage and authenticating correctly towards the API from the cypress is outside the scope of this introductory cypress course. 
 
-In the futere I will consider redoing some parts of the course. The first part will be to rewrite jira-clone so that it is simple to install. Then the course can be changed so that cypress is run with the application. 
+In the future I will consider redoing some parts of the course. The first part will be to rewrite jira-clone so that it is simple to install. Then the course can be changed so that cypress is run with the application. 

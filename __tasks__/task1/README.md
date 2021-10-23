@@ -4,13 +4,13 @@ The goal of this task is to learn the basics of Cypress and to create our first 
 
 This is the test case you are going to automate: 
 1. Go to url [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board).
-2. Create a new issue by simluating user clicks and inputs. 
+2. Create a new issue by simulating user clicks and inputs. 
 
-Try to complete this test case on paper in order to get familar with the actual steps before you start to program it. 
+Visit the website and have a look around to get familiar. Try to write the above test case on paper in order to get familiar with the actual steps before you start to program it. That is, write down which buttons you need to click and what inputs you need to do. Then you will know all the steps you need to implement for the first test.
 
 ## Task 1 A - The First Test
 
-Open the folder containing the folder where you installed Cypress in your favorite IDE. We recomend [Visual Studios Code](https://code.visualstudio.com/Download). In the Cypress folder, there is an integration folder, create a new folder in there (e.g. 'itera course'). In your new folder create a new file `task1.js`.
+Open the folder containing the folder where you installed Cypress in your favorite IDE. We recommend [Visual Studios Code](https://code.visualstudio.com/Download). In the Cypress folder, there is an integration folder, create a new folder in there (e.g. 'Itera course'). In your new folder create a new file `task1.js`.
 
 ![folder structure](https://i.imgur.com/CegodAy.png)
 
@@ -37,8 +37,8 @@ The first thing you want to do is to make Cypress [visit](https://docs.cypress.i
 ```javascript
 cy.visit('https://jira-clone.mad.itera.no/project/board');
 ```
-- 
-All cypress commands are accesible from `cy.`
+
+All cypress commands are accessible from `cy.`
 
 Now it's a good time to see if you are able to run your test. Open the Cypress test runner 
 
@@ -73,14 +73,14 @@ There are many ways to select this \<p> element.
 - `cy.get('.myClass')` will select all elements that has the class `myClass`. The notation `.` before `myClass` is used to tell Cypress we are looking for a class. 
 	- Again, this is not that useful when we want to find one element, because many elements on a webpage could have the same class. 
 	
-- `cy.get('#myId')` will select the element with id myId, `#` is used to tell Cypress we are looking for an ID. Using id is often a good way to select elements when we want a single element beause IDs should be unique. 
-	- Note that for [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board) IDs are not unique so they are not that helpfull. 
+- `cy.get('#myId')` will select the element with id myId, `#` is used to tell Cypress we are looking for an ID. Using id is often a good way to select elements when we want a single element because IDs should be unique. 
+	- Note that for [https://jira-clone.mad.itera.no/project/board](https://jira-clone.mad.itera.no/project/board) IDs are not unique so they are not that helpful. 
 	
 - We can also select elements based on any attribute the element has. The syntax for this is `cy.get('[nameOfAttribute="valueOfAttribute"]')` 
-	- For example `cy.get('[style="color:red"]')`. You will also need to use this selector a lot during this course. 
+	- For example `cy.get('[style="color:red"]')`. You will need to use this selector a lot during this course. 
 	
 - `cy.contains('Some paragraph text')` selects all the elements that contains the text `'Some paragraph text'`. 
-	- Selecting elements based on text is often not good because texts change often and in most modern systems text are not part of code and change independetly of the code. You do not want your tests to break because some text editor wrote new texts. 
+	- Selecting elements based on text is often not good because texts change often. In most modern systems, text are not part of the code and change independently of the code. You do not want your tests to break because some text editor wrote new texts. 
 
 If you want to learn more about selectors, see the [Cypress documentation](https://docs.cypress.io/api/commands/get.html#Arguments).
 
@@ -113,7 +113,7 @@ The [`should()`](https://docs.cypress.io/api/commands/should/) command will make
 
 ## Task 1 B - Practicing Selectors
 In this subtask you will practice more with selectors. You will extend the test case from 1A so that the issue you create will have more than just default values. Find suitable selectors and change the following values
-- Description (you do not have to use any custom formating unless you really want to)
+- Description (you do not have to use any custom formatting unless you really want to)
 - Issue type 
 - Reporter
 - Assignee

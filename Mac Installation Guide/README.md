@@ -10,7 +10,7 @@ Cypress requires Node.js version 12 or above. Download the latest version of Nod
 Open the downloaded *.pkg* file and go through the installation wizard.
 
 ## 2. Create a project folder
-Open the *Finder* application and nagivate to a plce of your choosing. For example, your desktop. Create a new folder for this workshop, e.g. "Itera Cypress Workshop":
+Open the *Finder* application and navigate to a folder of your choosing. For example, your desktop. Create a new folder for this workshop, e.g. "Itera Cypress Workshop":
 
 ![Folder](https://i.imgur.com/9u2sOiE.png)
 
